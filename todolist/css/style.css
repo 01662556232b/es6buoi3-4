@@ -222,6 +222,9 @@ span.toggle-btn:hover{
 }
 
 /* Todo list */
+ul{
+  list-style: none;
+}
 ul.todo {
   list-style: none;
   
@@ -263,18 +266,18 @@ ul.todo#completed:before {
   margin: 0 0 0 -75px;
 }
 
-ul.todo#todo:empty:after {
+#todo#todo:empty:after {
   content: 'You have nothing to-do!';
   margin: 15px 0 0 0;
 }
 
-ul.todo#completed:empty:after {
+#todo#completed:empty:after {
   content: 'You have yet to complete any tasks.';
 }
 
 
-ul.todo#todo:after,
-ul.todo#completed:after {
+#todo#todo:after,
+#todo#completed:after {
   width: 100%;
   display: block;
   text-align: center;
